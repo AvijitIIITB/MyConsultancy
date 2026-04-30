@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Consultancy | Professional Services</title>
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #ffffff;
+    }
+
+    header {
+        background: #0a4dbc;
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+        font-size: 2.3rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    section {
+        padding: 50px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 35px;
+        color: #0a4dbc;
+        font-size: 2rem;
+    }
+
+    /* Services */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #f4f6f8;
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #0a4dbc;
+        font-size: 1.2rem;
+    }
+
+    /* About */
+    .about {
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+        font-size: 1.05rem;
+    }
+
+    /* Contact */
+    .contact-form {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 14px;
+        margin: 12px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button {
+        width: 100%;
+        background: #0a4dbc;
+        color: #fff;
+        padding: 14px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #083a8f;
+    }
+
+    footer {
+        background: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Mobile Optimizations */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 1.9rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+        }
+
+        section {
+            padding: 40px 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: 50px 15px;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        button {
+            font-size: 1rem;
+            padding: 13px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>BudgetTech Consultancy</h1>
+        <p>Expert Consulting for Business, Technology & Innovation</p>
+    </header>
+    <section style="background:#f0f5ff; text-align:center;">
+    <h2>Launch Offer</h2>
+    <p style="max-width:800px; margin:auto; font-size:1.1rem;">
+        As a newly launched consultancy, we are committed to building long‑term partnerships.
+        To support early adopters, we are offering our services at
+        <strong>highly competitive and reasonable pricing</strong>,
+        without any compromise on quality or expertise.
+    </p>
+    </section>
+    <!-- Services Section -->
+    <section>
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Strategy Consulting</h3>
+                <p>Helping organizations define clear strategies, roadmaps, and growth plans. Creating vision to maximize ROI</p>
+            </div>
+
+            <div class="card">
+                <h3>Technology Consulting</h3>
+                <p>Expert guidance in engineering, R&D, digital transformation, automation and innovation</p>
+            </div>
+
+            <div class="card">
+                <h3>Process Improvement</h3>
+                <p>Optimizing workflows, quality systems and operational efficiency</p>
+            </div>
+            <div class="card">
+                <h3>Building Prototypes</h3>
+                <p>Creation of the first prototype from the research idea. Going from zero to one. Help business to scale the solution.</p>
+            </div>
+            <div class="card">
+                <h3>Launch your business</h3>
+                <p>Helping business to create an impressive online presence</p>
+            </div>
+            <div class="card">
+                <h3>Advertisement and customer engagement</h3>
+                <p>Helping business to create impressive step-by-step Ad campaign and providing excellent support for customer engagement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Us</h2>
+        <div class="about">
+            <p>
+                We are a boutique consultancy providing practical, results‑driven solutions.
+                With strong industry and R&D experience, we help clients solve complex
+                technical and business challenges. Created by world-known tech generalists and the best problem-solvers.
+	    </p>
+        </div>
+    </section>
+
+    
+<section>
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form action="mailto:mavijit19@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="5" placeholder="How can we help you?" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2026 BudgetTech Consultancy | All Rights Reserved
+    </footer>
+
+</body>
+</html>
